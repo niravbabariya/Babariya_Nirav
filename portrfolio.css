@@ -1,0 +1,372 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-image: linear-gradient(0deg, rgb(0, 235, 252), rgb(32, 36, 45), rgb(32, 36, 45));
+}
+
+* {
+    text-decoration: none;
+    margin: 0px;
+}
+
+.container {
+    position: absolute;
+    top: 10%;
+    height: 80dvh;
+    width: 160vh;
+    background-color: rgb(32, 36, 45);
+    box-shadow: 0px 0px 50px 0px;
+    border-radius: 30px;
+}
+
+.menu-bar {
+    position: absolute;
+    right: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35px;
+    width: 30%;
+    border-radius: 50px;
+}
+
+.home,
+.about,
+.skills,
+.portfolio,
+.contact {
+    color: white;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: all 1s;
+}
+
+.home:hover,
+.about:hover,
+.skills:hover,
+.portfolio:hover,
+.contact:hover {
+    color: rgb(12, 240, 253);
+    text-shadow: 10px 0px 10px rgb(12, 240, 253),
+        0px 5px 10px rgb(12, 240, 253),
+        -10px 0px 10px rgb(12, 240, 253),
+        0px -5px 10px rgb(12, 240, 253);
+    filter: blur(1%);
+}
+
+.contact {
+    width: 15%;
+}
+
+.portfolio {
+    width: 18%;
+}
+
+.skills {
+    width: 13%;
+}
+
+.about {
+    width: 13%;
+}
+
+.home {
+    width: 13%;
+}
+
+.logo {
+    left: 2%;
+    position: absolute;
+    display: flex;
+    top: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 8%;
+    height: 6%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.discription {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.introduction {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: white;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+.name {
+    position: relative;
+    left: -2px;
+    color: white;
+    font-family: Verdana;
+    font: 800;
+    font-size: 1.6rem;
+    top: 5px;
+    text-transform: capitalize;
+    cursor: default;
+}
+
+.work-introdustion {
+    position: relative;
+    font-size: 1.1rem;
+    color: white;
+    font-family: sans-serif;
+    top: 15px;
+    cursor: default;
+}
+
+span {
+    color: rgb(12, 240, 253);
+}
+
+.social-media {
+    height: 50px;
+    width: 40vh;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    border: solid rgb(5, 197, 255) 1.5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fa-facebook::before,
+.fa-linkedin::before,
+.fa-instagram::before,
+.fa-github::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgb(5, 197, 255);
+    width: 100%;
+    transition: all 1s;
+    transform: scale(1);
+    
+}
+
+.fa-facebook:hover::before {
+    color: rgb(255, 255, 255);
+    background: #080808 ;
+    transform: scale(1.2);
+}
+
+.fa-instagram:hover::before{
+    transform: scale(1.1);
+    background: rgb(15, 2, 2);
+    color: aliceblue;
+}
+
+.fa-github:hover::before{
+    color: azure;
+    background-color: black;
+    transform: scale(1.2);
+}
+
+.fa-linkedin:hover::before{
+    background: #0a0a0a;
+    color: white;
+    transform: scale(1.1);
+}
+
+.box {
+    position: absolute;
+    width: 7.35rem;
+    height: 12rem;
+    right: 11%;
+    bottom: 40%;
+    border-radius: 10px;
+    rotate: 30deg;
+    transition: all 1s;
+    z-index: 1;
+    filter: drop-shadow(10px 5px  15px rgb(10, 0, 0));
+}
+
+.box::before {
+    position: absolute;
+    border-radius: 10px;
+    content: '';
+    width: 7.35rem;
+    height: 12rem;
+    rotate: 120deg;
+    transition: all 1s;
+    right: 0%;
+    z-index: 0;
+    background: #080808;
+    opacity: 1;
+    
+}
+
+.box::after {
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    content: '';
+    width: 7.35rem;
+    height: 12rem;
+    rotate: 60deg;
+    transition: all 1s ;
+    left: 0%;
+    background: #080808;
+    opacity: 1;
+    
+}
+
+.box:hover {
+    right:13.5%;
+    rotate: 0deg;
+    filter: drop-shadow(10px 10px 15px rgb(9, 0, 0));
+}
+
+.box:hover::after {
+    rotate: 0deg;
+    left: 105%;
+    opacity: 0;    
+}
+
+.box:hover::before {
+    right: 105%;
+    rotate: 0deg;
+    opacity: 0;    
+}
+
+
+
+.parsnol-image{
+    position: absolute;
+    width: 7.35rem;
+    height: 12rem;
+    background-image: url(IMG_1597.JPG);
+    border-radius: 10px;
+    background-size:127.9px;
+    transform-origin: center;
+    transition: all 1s;
+}
+
+
+.parsnol-image::after{
+    content: '';
+    rotate: 60deg;
+    position: absolute;
+    width: 7.35rem;
+    height: 12rem;
+    border-radius: 10px;
+    background-size:127.9px;
+    transform-origin: center;
+    transition: all 1s;
+    transform-origin: center; 
+    rotate: 60deg;
+    transition: all 1s ;
+    opacity: 0;
+    left: 0%;
+    background-image: url(IMG_1558.JPG);
+     z-index: -1;
+}
+.parsnol-image::before{
+    content: '';
+    rotate: 120deg;
+    position: absolute;
+    width: 7.35rem;
+    height: 12rem;
+    background-image: url(IMG_0248.jpg);
+    border-radius: 10px;
+    background-size:127.9px;
+    transform-origin: center;
+    transition: all 1s;
+    transform-origin: center;   
+    z-index: -1;
+    opacity: 0;
+    right: 0%;
+}
+.parsnol-image:hover::after {
+    rotate: 0deg;
+    left: 110%;
+    opacity: 1;
+}
+
+.parsnol-image:hover::before {
+    right: 110%;
+    rotate: 0deg;
+    opacity: 1;
+    
+}
+@media screen and (max-width : 600px){
+
+    body {
+        max-height: 100vh;
+        max-width: 100%; 
+        background-size: 100%;       
+    }
+
+    .container {
+        margin: 0px;
+        top: 10%;
+        max-height: 90%;
+        max-width: 90%;
+    }
+    .menu-bar {
+        width: 95%;
+        left: 2%;
+        top: 5%;
+    }
+
+    .logo {
+        width: 20%;
+        height: 3%;
+        top: 1%;
+        left: 6%;
+    }
+
+    .discription {
+        top: 13%;
+        left: 5%;
+        height: 13%;
+    }
+    
+    .box {
+        display: flex;
+        justify-content: center;
+        right:33%;
+        bottom: 40%;
+        rotate: 0deg;
+
+    }
+
+    .social-media {
+        margin: 0px 30px 0px 30px;
+        height: 7vh;
+        bottom: 6%;
+        width: 35vh;
+        justify-content: space-between;
+        left: 0%;
+        flex-direction: row;
+    }
+    
+    .box:hover {
+        right:33%;
+    }
+
+}
