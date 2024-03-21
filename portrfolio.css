@@ -10,11 +10,13 @@ body {
 }
 
 * {
+    padding: 0px;
     text-decoration: none;
     margin: 0px;
 }
 
 .container {
+    display: grid;
     position: absolute;
     top: 10%;
     height: 80dvh;
@@ -82,15 +84,13 @@ body {
 }
 
 .logo {
-    left: 2%;
-    position: absolute;
     display: flex;
-    top: 5px;
+    position: absolute;
     justify-content: center;
     align-items: center;
     color: white;
     width: 8%;
-    height: 6%;
+    height: 4%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -313,7 +313,7 @@ span {
     opacity: 1;
     
 }
-@media screen and (max-width : 2000px){
+@media screen and (max-width : 1270px){
 
     body {
         max-height: 100vh;
@@ -322,6 +322,9 @@ span {
     }
 
     .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0px;
         top: 10%;
         max-height: 1000px;
@@ -334,10 +337,9 @@ span {
     }
 
     .logo {
-        width: 20%;
-        height: 3%;
+        width: 90%;
+        height: 6%;
         top: 1%;
-        left: 6%;
     }
 
     .discription {
@@ -347,26 +349,22 @@ span {
     }
     
     .box {
-        display: flex;
-        justify-content: center;
-        margin:auto 100%;
-        align-items: center;
+        right: auto;
+        bottom: auto;
         rotate: 0deg;
-
     }
 
     .social-media {
-        margin: 0px 30px 0px 30px;
         height: 7vh;
         bottom: 6%;
-        width: 35vh;
-        justify-content: space-between;
-        left: 0%;
+        width: 100%;
+        justify-content:space-around;
         flex-direction: row;
+        left: 0px;
     }
     
     .box:hover {
-        right:33%;
+        right:auto;
     }
 
 }
