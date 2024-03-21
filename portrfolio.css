@@ -313,7 +313,7 @@ span {
     opacity: 1;
     
 }
-@media screen and (max-width : 600px){
+@media screen and (max-width : 2000px){
 
     body {
         max-height: 100vh;
@@ -324,7 +324,7 @@ span {
     .container {
         margin: 0px;
         top: 10%;
-        max-height: 90%;
+        max-height: 1000px;
         max-width: 90%;
     }
     .menu-bar {
@@ -349,8 +349,8 @@ span {
     .box {
         display: flex;
         justify-content: center;
-        right:33%;
-        bottom: 40%;
+        margin:auto 100%;
+        align-items: center;
         rotate: 0deg;
 
     }
