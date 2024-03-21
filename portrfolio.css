@@ -274,7 +274,7 @@ span {
     width: 7.35rem;
     height: 12rem;
     border-radius: 10px;
-    background-size:127.9px;
+    background-size:110%;
     transform-origin: center;
     transition: all 1s;
     transform-origin: center; 
@@ -293,7 +293,7 @@ span {
     height: 12rem;
     background-image: url(IMG_0248.jpg);
     border-radius: 10px;
-    background-size:127.9px;
+    background-size:110%;
     transform-origin: center;
     transition: all 1s;
     transform-origin: center;   
