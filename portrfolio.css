@@ -388,5 +388,14 @@ span {
     transform-origin:right;
     transform:perspective(800px) rotateY(40deg);
 }
+
+.parsnol-image:hover::after {
+    left: 105%;
+}
+
+.parsnol-image:hover::before {
+    right: 105%;
+    
+}
     
 }
